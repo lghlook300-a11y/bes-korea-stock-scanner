@@ -3,7 +3,7 @@ name: Update Korea Stock Scanner
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 7 * * 1-5"
+    - cron: "30 0 * * 1-5"
 
 permissions:
   contents: write
