@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 from pathlib import Path
 import time
@@ -11,6 +12,26 @@ from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 CACHE = {"at": 0.0, "data": None}
+KST = timezone(timedelta(hours=9))
+
+# 첫 검증용 고유동성 대표 종목. 전 종목 확대는 점수 검증 뒤 진행한다.
+UNIVERSE = [
+    ("005930", "삼성전자", "KOSPI"), ("000660", "SK하이닉스", "KOSPI"),
+    ("373220", "LG에너지솔루션", "KOSPI"), ("207940", "삼성바이오로직스", "KOSPI"),
+    ("005380", "현대차", "KOSPI"), ("000270", "기아", "KOSPI"),
+    ("068270", "셀트리온", "KOSPI"), ("105560", "KB금융", "KOSPI"),
+    ("055550", "신한지주", "KOSPI"), ("035420", "NAVER", "KOSPI"),
+    ("035720", "카카오", "KOSPI"), ("012330", "현대모비스", "KOSPI"),
+    ("005490", "POSCO홀딩스", "KOSPI"), ("028260", "삼성물산", "KOSPI"),
+    ("006400", "삼성SDI", "KOSPI"), ("051910", "LG화학", "KOSPI"),
+    ("096770", "SK이노베이션", "KOSPI"), ("034020", "두산에너빌리티", "KOSPI"),
+    ("009540", "HD한국조선해양", "KOSPI"), ("012450", "한화에어로스페이스", "KOSPI"),
+    ("042660", "한화오션", "KOSPI"), ("086790", "하나금융지주", "KOSPI"),
+    ("032830", "삼성생명", "KOSPI"), ("015760", "한국전력", "KOSPI"),
+    ("247540", "에코프로비엠", "KOSDAQ"), ("086520", "에코프로", "KOSDAQ"),
+    ("196170", "알테오젠", "KOSDAQ"), ("028300", "HLB", "KOSDAQ"),
+    ("263750", "펄어비스", "KOSDAQ"), ("293490", "카카오게임즈", "KOSDAQ"),
+]
 
 
 def _number(text: str) -> float:
@@ -46,7 +67,7 @@ def _market_page(market: int, page: int):
 
 def _daily_prices(code: str, count: int = 70):
     url = "https://fchart.stock.naver.com/sise.nhn"
-    response = requests.get(url, params={"symbol": code, "timeframe": "day", "count": count, "requestType": 0}, headers=HEADERS, timeout=15)
+    response = requests.get(url, params={"symbol": code, "timeframe": "day", "count": count, "requestType": 0}, headers=HEADERS, timeout=8)
     response.raise_for_status()
     root = ET.fromstring(response.text)
     prices = []
@@ -64,6 +85,10 @@ def _score(stock):
     if len(closes) < 25:
         return None
     close = closes[-1]
+    stock["price"] = close
+    stock["change"] = round((close / closes[-2] - 1) * 100, 2) if len(closes) > 1 else 0
+    stock["volume"] = volumes[-1]
+    stock["value"] = close * volumes[-1] / 1_000_000
     ma5 = sum(closes[-5:]) / 5
     ma20 = sum(closes[-20:]) / 20
     high20 = max(closes[-20:])
@@ -83,23 +108,21 @@ def scan_market():
     if CACHE["data"] and time.time() - CACHE["at"] < 600:
         return CACHE["data"]
     try:
-        universe = []
-        for market in (0, 1):
-            universe.extend(_market_page(market, 1))
-            universe.extend(_market_page(market, 2))
-        universe = sorted(universe, key=lambda x: x["value"], reverse=True)[:80]
+        universe = [{"code": code, "name": name, "market": market, "price": 0, "change": 0, "volume": 0, "value": 0} for code, name, market in UNIVERSE]
         ranked = []
-        for stock in universe:
-            try:
-                item = _score(stock)
-                if item:
-                    ranked.append(item)
-            except Exception:
-                continue
+        with ThreadPoolExecutor(max_workers=10) as pool:
+            futures = [pool.submit(_score, stock) for stock in universe]
+            for future in as_completed(futures):
+                try:
+                    item = future.result()
+                    if item:
+                        ranked.append(item)
+                except Exception:
+                    continue
         ranked.sort(key=lambda x: (x["score"], x["value"]), reverse=True)
-        data = {"ok": True, "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M"), "market_state": "관찰", "count": len(ranked), "stocks": ranked[:10]}
+        data = {"ok": True, "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"), "market_state": "관찰", "count": len(ranked), "stocks": ranked[:10]}
     except Exception as exc:
-        data = {"ok": False, "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M"), "market_state": "연결 점검", "count": 0, "stocks": [], "message": str(exc)}
+        data = {"ok": False, "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"), "market_state": "연결 점검", "count": 0, "stocks": [], "message": str(exc)}
     CACHE.update({"at": time.time(), "data": data})
     return data
 
