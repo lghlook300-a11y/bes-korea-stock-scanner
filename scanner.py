@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from datetime import datetime
+import json
+from pathlib import Path
 import time
 import xml.etree.ElementTree as ET
 
@@ -101,3 +103,10 @@ def scan_market():
     CACHE.update({"at": time.time(), "data": data})
     return data
 
+
+if __name__ == "__main__":
+    result = scan_market()
+    output = Path(__file__).parent / "data" / "latest.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"saved {output}")
