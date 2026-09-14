@@ -91,7 +91,9 @@ def _score(stock):
     stock["value"] = close * volumes[-1] / 1_000_000
     ma5 = sum(closes[-5:]) / 5
     ma20 = sum(closes[-20:]) / 20
+    ma60 = sum(closes[-60:]) / min(60, len(closes))
     high20 = max(closes[-20:])
+    low20 = min(closes[-20:])
     vol5 = sum(volumes[-5:]) / max(1, len(volumes[-5:]))
     vol20 = sum(volumes[-20:]) / max(1, len(volumes[-20:]))
     trend = 25 if close > ma20 else 5
@@ -100,8 +102,53 @@ def _score(stock):
     volume = min(15, 7.5 * vol5 / max(vol20, 1))
     structure = 15 if close >= high20 * 0.97 else (8 if close >= ma5 else 2)
     score = round(min(100, trend + momentum + liquidity + volume + structure))
-    action = "진입 후보" if score >= 85 and stock["change"] < 12 else "눌림 대기" if score >= 75 else "관찰"
-    return {**stock, "score": score, "action": action, "reason": f"20일선 {'위' if close > ma20 else '아래'} · 거래량 {vol5 / max(vol20, 1):.1f}배 · 20일 고점 대비 {((close / high20)-1)*100:.1f}%"}
+    vol_ratio = vol5 / max(vol20, 1)
+    high_gap = (close / high20 - 1) * 100
+    ma20_gap = (close / ma20 - 1) * 100
+    range_position = (close - low20) / max(high20 - low20, 1) * 100
+
+    if close > ma20 and ma5 > ma20 and score >= 70:
+        strength = "강함"
+    elif close > ma20 or score >= 55:
+        strength = "보통"
+    else:
+        strength = "약함"
+
+    if ma20_gap >= 12 or (range_position >= 97 and stock["change"] >= 5):
+        position = "과열권"
+    elif close >= high20 * 0.97 and ma5 >= ma20:
+        position = "상승 진행"
+    elif close >= ma20 * 0.98 and ma5 >= ma20:
+        position = "눌림 구간"
+    elif close > ma60 and ma5 > ma20:
+        position = "상승 초입"
+    elif close <= ma20:
+        position = "약세 구간"
+    else:
+        position = "바닥 준비"
+
+    if strength == "강함" and position in ("눌림 구간", "상승 초입") and vol_ratio >= 0.8:
+        action = "소액 검토"
+        action_reason = "힘이 강하고 추격 부담이 비교적 작아요"
+    elif strength == "강함" and position in ("상승 진행", "과열권"):
+        action = "눌림 대기"
+        action_reason = "종목은 강하지만 지금은 추격보다 눌림을 기다려요"
+    elif strength == "약함" and position == "약세 구간":
+        action = "제외"
+        action_reason = "아직 가격 구조가 약해요"
+    else:
+        action = "관찰"
+        action_reason = "방향이 더 분명해질 때까지 지켜봐요"
+
+    return {
+        **stock,
+        "score": score,
+        "strength": strength,
+        "position": position,
+        "action": action,
+        "action_reason": action_reason,
+        "reason": f"20일선 대비 {ma20_gap:+.1f}% · 거래량 {vol_ratio:.1f}배 · 20일 고점 대비 {high_gap:.1f}%",
+    }
 
 
 def scan_market():
@@ -120,7 +167,9 @@ def scan_market():
                 except Exception:
                     continue
         ranked.sort(key=lambda x: (x["score"], x["value"]), reverse=True)
-        data = {"ok": True, "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"), "market_state": "관찰", "count": len(ranked), "stocks": ranked[:10]}
+        shown = ranked[:10]
+        action_counts = {name: sum(1 for item in shown if item["action"] == name) for name in ("소액 검토", "눌림 대기", "관찰", "제외")}
+        data = {"ok": True, "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"), "market_state": "관찰", "count": len(ranked), "action_counts": action_counts, "stocks": shown}
     except Exception as exc:
         data = {"ok": False, "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"), "market_state": "연결 점검", "count": 0, "stocks": [], "message": str(exc)}
     CACHE.update({"at": time.time(), "data": data})
