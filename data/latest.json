@@ -1,7 +1,128 @@
 {
   "ok": true,
-  "updated_at": "2026-09-13 09:30",
+  "updated_at": "2026-09-14 09:47",
   "market_state": "관찰",
-  "count": 0,
-  "stocks": []
+  "count": 30,
+  "stocks": [
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "market": "KOSPI",
+      "price": 177100.0,
+      "change": -0.45,
+      "volume": 270988.0,
+      "value": 47991.9748,
+      "score": 67,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.8배 · 20일 고점 대비 -0.4%"
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "market": "KOSPI",
+      "price": 138000.0,
+      "change": 0.15,
+      "volume": 177684.0,
+      "value": 24520.392,
+      "score": 64,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.9배 · 20일 고점 대비 -1.1%"
+    },
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "market": "KOSPI",
+      "price": 1103000.0,
+      "change": 2.04,
+      "volume": 29224.0,
+      "value": 32234.072,
+      "score": 63,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.8배 · 20일 고점 대비 -6.3%"
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "market": "KOSPI",
+      "price": 112900.0,
+      "change": 0.0,
+      "volume": 202184.0,
+      "value": 22826.5736,
+      "score": 63,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.8배 · 20일 고점 대비 -1.4%"
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "market": "KOSPI",
+      "price": 88700.0,
+      "change": -2.31,
+      "volume": 899306.0,
+      "value": 79768.4422,
+      "score": 57,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 1.0배 · 20일 고점 대비 -3.3%"
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 1716000.0,
+      "change": -5.3,
+      "volume": 1054771.0,
+      "value": 1809987.036,
+      "score": 54,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.9배 · 20일 고점 대비 -7.5%"
+    },
+    {
+      "code": "009540",
+      "name": "HD한국조선해양",
+      "market": "KOSPI",
+      "price": 360500.0,
+      "change": -1.37,
+      "volume": 21609.0,
+      "value": 7790.0445,
+      "score": 52,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 1.1배 · 20일 고점 대비 -3.7%"
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "market": "KOSPI",
+      "price": 540000.0,
+      "change": -0.92,
+      "volume": 64218.0,
+      "value": 34677.72,
+      "score": 50,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.8배 · 20일 고점 대비 -6.4%"
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "market": "KOSDAQ",
+      "price": 9260.0,
+      "change": 0.33,
+      "volume": 61447.0,
+      "value": 568.99922,
+      "score": 50,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 0.5배 · 20일 고점 대비 -6.3%"
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "market": "KOSPI",
+      "price": 139400.0,
+      "change": -3.73,
+      "volume": 238315.0,
+      "value": 33221.111,
+      "score": 45,
+      "action": "관찰",
+      "reason": "20일선 위 · 거래량 1.1배 · 20일 고점 대비 -9.2%"
+    }
+  ]
 }
