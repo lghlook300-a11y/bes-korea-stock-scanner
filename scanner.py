@@ -85,6 +85,7 @@ def _score(stock):
     if len(closes) < 25:
         return None
     close = closes[-1]
+    latest_bar = prices[-1]
     stock["price"] = close
     stock["change"] = round((close / closes[-2] - 1) * 100, 2) if len(closes) > 1 else 0
     stock["volume"] = volumes[-1]
@@ -143,6 +144,8 @@ def _score(stock):
     return {
         **stock,
         "score": score,
+        "day_high": latest_bar["high"],
+        "day_low": latest_bar["low"],
         "strength": strength,
         "position": position,
         "action": action,
@@ -178,7 +181,37 @@ def scan_market():
 
 if __name__ == "__main__":
     result = scan_market()
-    output = Path(__file__).parent / "data" / "latest.json"
+    now = datetime.now(KST)
+    base = Path(__file__).parent / "data"
+    output = base / "latest.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    session = "open" if now.hour < 12 else "close"
+    history_dir = base / "history" / now.strftime("%Y-%m-%d")
+    history_dir.mkdir(parents=True, exist_ok=True)
+    (history_dir / f"{session}.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    if session == "close":
+        open_file = history_dir / "open.json"
+        if open_file.exists():
+            morning = json.loads(open_file.read_text(encoding="utf-8"))
+            closing = {item["code"]: item for item in result.get("stocks", [])}
+            rows = []
+            for first in morning.get("stocks", []):
+                last = closing.get(first["code"])
+                if not last or not first.get("price"):
+                    continue
+                price = first["price"]
+                rows.append({
+                    "code": first["code"], "name": first["name"],
+                    "morning_action": first["action"], "first_price": price,
+                    "close_price": last["price"],
+                    "close_return": round((last["price"] / price - 1) * 100, 2),
+                    "day_peak_return": round((last["day_high"] / price - 1) * 100, 2),
+                    "mae": round((last["day_low"] / price - 1) * 100, 2),
+                })
+            report = {"date": now.strftime("%Y-%m-%d"), "open_updated_at": morning.get("updated_at"), "close_updated_at": result.get("updated_at"), "stocks": rows}
+            report_dir = base / "daily-reports"
+            report_dir.mkdir(parents=True, exist_ok=True)
+            (report_dir / f"{now:%Y-%m-%d}.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"saved {output}")
