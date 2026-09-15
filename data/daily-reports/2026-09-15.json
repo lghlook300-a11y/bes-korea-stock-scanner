@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-15",
+  "open_updated_at": "2026-09-15 09:48",
+  "close_updated_at": "2026-09-15 16:46",
+  "stocks": [
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "소액 검토",
+      "first_price": 140400.0,
+      "close_price": 142100.0,
+      "close_return": 1.21,
+      "day_peak_return": 2.64,
+      "mae": -1.57
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "관찰",
+      "first_price": 177050.0,
+      "close_price": 176400.0,
+      "close_return": -0.37,
+      "day_peak_return": 1.61,
+      "mae": -0.99
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "morning_action": "관찰",
+      "first_price": 545000.0,
+      "close_price": 549000.0,
+      "close_return": 0.73,
+      "day_peak_return": 2.57,
+      "mae": -2.57
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 9650.0,
+      "close_price": 9880.0,
+      "close_return": 2.38,
+      "day_peak_return": 4.66,
+      "mae": -2.07
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "morning_action": "관찰",
+      "first_price": 112200.0,
+      "close_price": 112300.0,
+      "close_return": 0.09,
+      "day_peak_return": 1.43,
+      "mae": -0.53
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "morning_action": "관찰",
+      "first_price": 137850.0,
+      "close_price": 137800.0,
+      "close_return": -0.04,
+      "day_peak_return": 1.49,
+      "mae": -0.83
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "morning_action": "관찰",
+      "first_price": 85500.0,
+      "close_price": 85700.0,
+      "close_return": 0.23,
+      "day_peak_return": 1.52,
+      "mae": -1.52
+    },
+    {
+      "code": "263750",
+      "name": "펄어비스",
+      "morning_action": "관찰",
+      "first_price": 34700.0,
+      "close_price": 35550.0,
+      "close_return": 2.45,
+      "day_peak_return": 5.76,
+      "mae": -2.02
+    }
+  ]
+}
