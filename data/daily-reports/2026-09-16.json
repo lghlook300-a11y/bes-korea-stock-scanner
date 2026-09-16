@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-16",
+  "open_updated_at": "2026-09-16 09:46",
+  "close_updated_at": "2026-09-16 16:44",
+  "stocks": [
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "눌림 대기",
+      "first_price": 372250.0,
+      "close_price": 366500.0,
+      "close_return": -1.54,
+      "day_peak_return": 1.01,
+      "mae": -2.89
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "눌림 대기",
+      "first_price": 176100.0,
+      "close_price": 176300.0,
+      "close_return": 0.11,
+      "day_peak_return": 0.62,
+      "mae": -1.7
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "관찰",
+      "first_price": 1726000.0,
+      "close_price": 1750000.0,
+      "close_return": 1.39,
+      "day_peak_return": 1.97,
+      "mae": -2.32
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "morning_action": "관찰",
+      "first_price": 559000.0,
+      "close_price": 542000.0,
+      "close_return": -3.04,
+      "day_peak_return": 0.0,
+      "mae": -4.83
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "morning_action": "관찰",
+      "first_price": 111700.0,
+      "close_price": 112100.0,
+      "close_return": 0.36,
+      "day_peak_return": 0.9,
+      "mae": -1.16
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "morning_action": "관찰",
+      "first_price": 136850.0,
+      "close_price": 136900.0,
+      "close_return": 0.04,
+      "day_peak_return": 0.69,
+      "mae": -1.06
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "관찰",
+      "first_price": 142700.0,
+      "close_price": 136600.0,
+      "close_return": -4.27,
+      "day_peak_return": 0.07,
+      "mae": -4.98
+    }
+  ]
+}
