@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-17",
+  "open_updated_at": "2026-09-17 09:47",
+  "close_updated_at": "2026-09-17 16:44",
+  "stocks": [
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "morning_action": "소액 검토",
+      "first_price": 1101000.0,
+      "close_price": 1093000.0,
+      "close_return": -0.73,
+      "day_peak_return": 1.0,
+      "mae": -3.91
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "눌림 대기",
+      "first_price": 180400.0,
+      "close_price": 178800.0,
+      "close_return": -0.89,
+      "day_peak_return": 0.67,
+      "mae": -2.77
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "morning_action": "관찰",
+      "first_price": 139600.0,
+      "close_price": 137700.0,
+      "close_return": -1.36,
+      "day_peak_return": 0.29,
+      "mae": -2.58
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "morning_action": "관찰",
+      "first_price": 114000.0,
+      "close_price": 113600.0,
+      "close_return": -0.35,
+      "day_peak_return": 0.26,
+      "mae": -2.54
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "관찰",
+      "first_price": 1737000.0,
+      "close_price": 1755000.0,
+      "close_return": 1.04,
+      "day_peak_return": 2.76,
+      "mae": -0.12
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "morning_action": "관찰",
+      "first_price": 85100.0,
+      "close_price": 85800.0,
+      "close_return": 0.82,
+      "day_peak_return": 1.76,
+      "mae": -1.18
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "관찰",
+      "first_price": 138600.0,
+      "close_price": 139400.0,
+      "close_return": 0.58,
+      "day_peak_return": 2.45,
+      "mae": -3.17
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "관찰",
+      "first_price": 363000.0,
+      "close_price": 365000.0,
+      "close_return": 0.55,
+      "day_peak_return": 1.24,
+      "mae": -0.55
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "제외",
+      "first_price": 252500.0,
+      "close_price": 254000.0,
+      "close_return": 0.59,
+      "day_peak_return": 2.57,
+      "mae": -0.4
+    }
+  ]
+}
