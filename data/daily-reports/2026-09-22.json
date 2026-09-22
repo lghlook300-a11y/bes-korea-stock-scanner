@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-22",
+  "open_updated_at": "2026-09-22 09:46",
+  "close_updated_at": "2026-09-22 16:43",
+  "stocks": [
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "눌림 대기",
+      "first_price": 1928000.0,
+      "close_price": 1835000.0,
+      "close_return": -4.82,
+      "day_peak_return": 0.36,
+      "mae": -5.71
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "눌림 대기",
+      "first_price": 281000.0,
+      "close_price": 275000.0,
+      "close_return": -2.14,
+      "day_peak_return": 0.89,
+      "mae": -2.49
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "morning_action": "관찰",
+      "first_price": 112600.0,
+      "close_price": 113000.0,
+      "close_return": 0.36,
+      "day_peak_return": 1.51,
+      "mae": -0.36
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "morning_action": "관찰",
+      "first_price": 85900.0,
+      "close_price": 86500.0,
+      "close_return": 0.7,
+      "day_peak_return": 2.56,
+      "mae": -0.81
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "morning_action": "관찰",
+      "first_price": 371000.0,
+      "close_price": 364000.0,
+      "close_return": -1.89,
+      "day_peak_return": 3.91,
+      "mae": -2.7
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "관찰",
+      "first_price": 175300.0,
+      "close_price": 175800.0,
+      "close_return": 0.29,
+      "day_peak_return": 1.83,
+      "mae": -0.34
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "관찰",
+      "first_price": 138100.0,
+      "close_price": 141200.0,
+      "close_return": 2.24,
+      "day_peak_return": 3.4,
+      "mae": -1.16
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "morning_action": "제외",
+      "first_price": 202000.0,
+      "close_price": 201000.0,
+      "close_return": -0.5,
+      "day_peak_return": 0.74,
+      "mae": -0.99
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "morning_action": "제외",
+      "first_price": 34150.0,
+      "close_price": 34100.0,
+      "close_return": -0.15,
+      "day_peak_return": 1.32,
+      "mae": -2.2
+    }
+  ]
+}
