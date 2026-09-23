@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-23",
+  "open_updated_at": "2026-09-23 09:46",
+  "close_updated_at": "2026-09-23 16:44",
+  "stocks": [
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "눌림 대기",
+      "first_price": 284500.0,
+      "close_price": 285500.0,
+      "close_return": 0.35,
+      "day_peak_return": 0.35,
+      "mae": -1.23
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "눌림 대기",
+      "first_price": 1869000.0,
+      "close_price": 1866000.0,
+      "close_return": -0.16,
+      "day_peak_return": 1.66,
+      "mae": -1.77
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "눌림 대기",
+      "first_price": 150200.0,
+      "close_price": 148900.0,
+      "close_return": -0.87,
+      "day_peak_return": 0.6,
+      "mae": -5.39
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "morning_action": "관찰",
+      "first_price": 374000.0,
+      "close_price": 367000.0,
+      "close_return": -1.87,
+      "day_peak_return": 1.47,
+      "mae": -2.41
+    },
+    {
+      "code": "263750",
+      "name": "펄어비스",
+      "morning_action": "관찰",
+      "first_price": 34000.0,
+      "close_price": 33850.0,
+      "close_return": -0.44,
+      "day_peak_return": 1.18,
+      "mae": -1.32
+    },
+    {
+      "code": "032830",
+      "name": "삼성생명",
+      "morning_action": "제외",
+      "first_price": 297500.0,
+      "close_price": 294000.0,
+      "close_return": -1.18,
+      "day_peak_return": 0.5,
+      "mae": -2.02
+    }
+  ]
+}
