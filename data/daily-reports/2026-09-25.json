@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-25",
+  "open_updated_at": "2026-09-25 09:46",
+  "close_updated_at": "2026-09-25 16:44",
+  "stocks": [
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "눌림 대기",
+      "first_price": 286500.0,
+      "close_price": 286500.0,
+      "close_return": 0.0,
+      "day_peak_return": 0.0,
+      "mae": -1.92
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "눌림 대기",
+      "first_price": 1863000.0,
+      "close_price": 1863000.0,
+      "close_return": 0.0,
+      "day_peak_return": 1.99,
+      "mae": -1.45
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "관찰",
+      "first_price": 148700.0,
+      "close_price": 148700.0,
+      "close_return": 0.0,
+      "day_peak_return": 1.61,
+      "mae": -4.44
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "morning_action": "관찰",
+      "first_price": 368500.0,
+      "close_price": 368500.0,
+      "close_return": 0.0,
+      "day_peak_return": 2.99,
+      "mae": -0.95
+    },
+    {
+      "code": "032830",
+      "name": "삼성생명",
+      "morning_action": "제외",
+      "first_price": 295000.0,
+      "close_price": 295000.0,
+      "close_return": 0.0,
+      "day_peak_return": 1.36,
+      "mae": -1.19
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "morning_action": "제외",
+      "first_price": 196000.0,
+      "close_price": 196000.0,
+      "close_return": 0.0,
+      "day_peak_return": 2.81,
+      "mae": -1.02
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "morning_action": "제외",
+      "first_price": 357000.0,
+      "close_price": 357000.0,
+      "close_return": 0.0,
+      "day_peak_return": 2.38,
+      "mae": -1.4
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "관찰",
+      "first_price": 174100.0,
+      "close_price": 174100.0,
+      "close_return": 0.0,
+      "day_peak_return": 1.61,
+      "mae": -1.03
+    },
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "morning_action": "제외",
+      "first_price": 1031000.0,
+      "close_price": 1031000.0,
+      "close_return": 0.0,
+      "day_peak_return": 3.01,
+      "mae": -1.55
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "제외",
+      "first_price": 352000.0,
+      "close_price": 352000.0,
+      "close_return": 0.0,
+      "day_peak_return": 1.99,
+      "mae": -0.71
+    }
+  ]
+}
