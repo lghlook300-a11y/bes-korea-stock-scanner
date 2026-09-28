@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-28",
+  "open_updated_at": "2026-09-28 09:48",
+  "close_updated_at": "2026-09-28 16:46",
+  "stocks": [
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "눌림 대기",
+      "first_price": 158400.0,
+      "close_price": 158300.0,
+      "close_return": -0.06,
+      "day_peak_return": 1.77,
+      "mae": -6.82
+    },
+    {
+      "code": "028300",
+      "name": "HLB",
+      "morning_action": "눌림 대기",
+      "first_price": 39700.0,
+      "close_price": 39700.0,
+      "close_return": 0.0,
+      "day_peak_return": 0.0,
+      "mae": 0.0
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "관찰",
+      "first_price": 366500.0,
+      "close_price": 361500.0,
+      "close_return": -1.36,
+      "day_peak_return": 0.41,
+      "mae": -4.37
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "관찰",
+      "first_price": 277250.0,
+      "close_price": 271000.0,
+      "close_return": -2.25,
+      "day_peak_return": 2.98,
+      "mae": -2.61
+    },
+    {
+      "code": "247540",
+      "name": "에코프로비엠",
+      "morning_action": "관찰",
+      "first_price": 109000.0,
+      "close_price": 110400.0,
+      "close_return": 1.28,
+      "day_peak_return": 4.13,
+      "mae": -5.6
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "관찰",
+      "first_price": 1809000.0,
+      "close_price": 1768000.0,
+      "close_return": -2.27,
+      "day_peak_return": 1.71,
+      "mae": -2.27
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 9310.0,
+      "close_price": 9460.0,
+      "close_return": 1.61,
+      "day_peak_return": 4.94,
+      "mae": -4.3
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "morning_action": "제외",
+      "first_price": 534000.0,
+      "close_price": 530000.0,
+      "close_return": -0.75,
+      "day_peak_return": 1.12,
+      "mae": -1.87
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "morning_action": "제외",
+      "first_price": 199200.0,
+      "close_price": 196900.0,
+      "close_return": -1.15,
+      "day_peak_return": 0.65,
+      "mae": -2.46
+    }
+  ]
+}
