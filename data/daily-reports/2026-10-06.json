@@ -1,15 +1,15 @@
 {
   "date": "2026-10-06",
   "open_updated_at": "2026-10-06 01:19",
-  "close_updated_at": "2026-10-06 15:45",
+  "close_updated_at": "2026-10-06 23:25",
   "stocks": [
     {
       "code": "086520",
       "name": "에코프로",
       "morning_action": "눌림 대기",
       "first_price": 89100.0,
-      "close_price": 95400.0,
-      "close_return": 7.07,
+      "close_price": 95900.0,
+      "close_return": 7.63,
       "day_peak_return": 8.53,
       "mae": 0.22
     },
@@ -18,8 +18,8 @@
       "name": "SK이노베이션",
       "morning_action": "소액 검토",
       "first_price": 151300.0,
-      "close_price": 158000.0,
-      "close_return": 4.43,
+      "close_price": 156700.0,
+      "close_return": 3.57,
       "day_peak_return": 4.43,
       "mae": -2.84
     },
@@ -28,8 +28,8 @@
       "name": "LG에너지솔루션",
       "morning_action": "관찰",
       "first_price": 369000.0,
-      "close_price": 390000.0,
-      "close_return": 5.69,
+      "close_price": 388500.0,
+      "close_return": 5.28,
       "day_peak_return": 5.96,
       "mae": -0.41
     },
@@ -38,8 +38,8 @@
       "name": "HLB",
       "morning_action": "눌림 대기",
       "first_price": 40650.0,
-      "close_price": 47400.0,
-      "close_return": 16.61,
+      "close_price": 47150.0,
+      "close_return": 15.99,
       "day_peak_return": 24.72,
       "mae": 3.69
     },
@@ -48,8 +48,8 @@
       "name": "삼성전자",
       "morning_action": "소액 검토",
       "first_price": 276000.0,
-      "close_price": 272000.0,
-      "close_return": -1.45,
+      "close_price": 273000.0,
+      "close_return": -1.09,
       "day_peak_return": 1.09,
       "mae": -2.17
     },
@@ -58,20 +58,10 @@
       "name": "에코프로비엠",
       "morning_action": "눌림 대기",
       "first_price": 115600.0,
-      "close_price": 128900.0,
-      "close_return": 11.51,
-      "day_peak_return": 11.94,
+      "close_price": 130600.0,
+      "close_return": 12.98,
+      "day_peak_return": 13.06,
       "mae": 1.04
-    },
-    {
-      "code": "293490",
-      "name": "카카오게임즈",
-      "morning_action": "눌림 대기",
-      "first_price": 10180.0,
-      "close_price": 10010.0,
-      "close_return": -1.67,
-      "day_peak_return": 2.16,
-      "mae": -2.06
     },
     {
       "code": "068270",
