@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-13",
+  "open_updated_at": "2026-10-13 01:55",
+  "close_updated_at": "2026-10-13 16:00",
+  "stocks": [
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "morning_action": "눌림 대기",
+      "first_price": 561000.0,
+      "close_price": 560000.0,
+      "close_return": -0.18,
+      "day_peak_return": 0.53,
+      "mae": -8.91
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "눌림 대기",
+      "first_price": 396500.0,
+      "close_price": 410000.0,
+      "close_return": 3.4,
+      "day_peak_return": 4.16,
+      "mae": -4.92
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "눌림 대기",
+      "first_price": 180300.0,
+      "close_price": 179700.0,
+      "close_return": -0.33,
+      "day_peak_return": -0.28,
+      "mae": -3.66
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 9630.0,
+      "close_price": 9810.0,
+      "close_return": 1.87,
+      "day_peak_return": 4.98,
+      "mae": -4.36
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "morning_action": "관찰",
+      "first_price": 152700.0,
+      "close_price": 156800.0,
+      "close_return": 2.69,
+      "day_peak_return": 2.95,
+      "mae": -6.35
+    },
+    {
+      "code": "028300",
+      "name": "HLB",
+      "morning_action": "관찰",
+      "first_price": 44600.0,
+      "close_price": 44000.0,
+      "close_return": -1.35,
+      "day_peak_return": 0.56,
+      "mae": -5.27
+    },
+    {
+      "code": "247540",
+      "name": "에코프로비엠",
+      "morning_action": "관찰",
+      "first_price": 115800.0,
+      "close_price": 113200.0,
+      "close_return": -2.25,
+      "day_peak_return": -1.47,
+      "mae": -9.5
+    }
+  ]
+}
