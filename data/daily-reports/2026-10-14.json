@@ -1,16 +1,16 @@
 {
   "date": "2026-10-14",
   "open_updated_at": "2026-10-14 00:13",
-  "close_updated_at": "2026-10-14 14:15",
+  "close_updated_at": "2026-10-14 22:00",
   "stocks": [
     {
       "code": "373220",
       "name": "LG에너지솔루션",
       "morning_action": "눌림 대기",
       "first_price": 412500.0,
-      "close_price": 427000.0,
-      "close_return": 3.52,
-      "day_peak_return": 3.64,
+      "close_price": 420000.0,
+      "close_return": 1.82,
+      "day_peak_return": 3.76,
       "mae": -0.85
     },
     {
@@ -18,8 +18,8 @@
       "name": "삼성SDI",
       "morning_action": "눌림 대기",
       "first_price": 565000.0,
-      "close_price": 598000.0,
-      "close_return": 5.84,
+      "close_price": 596000.0,
+      "close_return": 5.49,
       "day_peak_return": 6.19,
       "mae": -1.06
     },
@@ -28,8 +28,8 @@
       "name": "SK이노베이션",
       "morning_action": "소액 검토",
       "first_price": 155300.0,
-      "close_price": 163800.0,
-      "close_return": 5.47,
+      "close_price": 163900.0,
+      "close_return": 5.54,
       "day_peak_return": 6.25,
       "mae": 2.9
     },
@@ -38,8 +38,8 @@
       "name": "에코프로",
       "morning_action": "소액 검토",
       "first_price": 85100.0,
-      "close_price": 88400.0,
-      "close_return": 3.88,
+      "close_price": 87400.0,
+      "close_return": 2.7,
       "day_peak_return": 5.17,
       "mae": -0.59
     },
@@ -48,8 +48,8 @@
       "name": "에코프로비엠",
       "morning_action": "관찰",
       "first_price": 113100.0,
-      "close_price": 117000.0,
-      "close_return": 3.45,
+      "close_price": 115300.0,
+      "close_return": 1.95,
       "day_peak_return": 4.42,
       "mae": -1.77
     },
@@ -58,18 +58,18 @@
       "name": "셀트리온",
       "morning_action": "관찰",
       "first_price": 177900.0,
-      "close_price": 181300.0,
-      "close_return": 1.91,
+      "close_price": 180700.0,
+      "close_return": 1.57,
       "day_peak_return": 3.99,
-      "mae": 1.07
+      "mae": 0.22
     },
     {
       "code": "005490",
       "name": "POSCO홀딩스",
       "morning_action": "제외",
       "first_price": 298500.0,
-      "close_price": 310000.0,
-      "close_return": 3.85,
+      "close_price": 308000.0,
+      "close_return": 3.18,
       "day_peak_return": 4.52,
       "mae": 1.01
     }
