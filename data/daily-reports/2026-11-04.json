@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-04",
+  "open_updated_at": "2026-11-04 00:26",
+  "close_updated_at": "2026-11-04 15:54",
+  "stocks": [
+    {
+      "code": "207940",
+      "name": "삼성바이오로직스",
+      "morning_action": "눌림 대기",
+      "first_price": 1435000.0,
+      "close_price": 1495000.0,
+      "close_return": 4.18,
+      "day_peak_return": 4.53,
+      "mae": -2.37
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 12050.0,
+      "close_price": 11950.0,
+      "close_return": -0.83,
+      "day_peak_return": 4.81,
+      "mae": -5.23
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "morning_action": "관찰",
+      "first_price": 353000.0,
+      "close_price": 355000.0,
+      "close_return": 0.57,
+      "day_peak_return": 1.7,
+      "mae": -3.12
+    },
+    {
+      "code": "015760",
+      "name": "한국전력",
+      "morning_action": "관찰",
+      "first_price": 29050.0,
+      "close_price": 30450.0,
+      "close_return": 4.82,
+      "day_peak_return": 6.02,
+      "mae": 0.34
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "morning_action": "관찰",
+      "first_price": 312000.0,
+      "close_price": 309000.0,
+      "close_return": -0.96,
+      "day_peak_return": 3.04,
+      "mae": -5.13
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "관찰",
+      "first_price": 190500.0,
+      "close_price": 200000.0,
+      "close_return": 4.99,
+      "day_peak_return": 5.51,
+      "mae": -1.57
+    }
+  ]
+}
