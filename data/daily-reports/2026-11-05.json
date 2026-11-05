@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05",
+  "open_updated_at": "2026-11-05 00:41",
+  "close_updated_at": "2026-11-05 16:13",
+  "stocks": [
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "눌림 대기",
+      "first_price": 202000.0,
+      "close_price": 213500.0,
+      "close_return": 5.69,
+      "day_peak_return": 6.93,
+      "mae": 1.98
+    },
+    {
+      "code": "015760",
+      "name": "한국전력",
+      "morning_action": "눌림 대기",
+      "first_price": 30600.0,
+      "close_price": 31200.0,
+      "close_return": 1.96,
+      "day_peak_return": 5.56,
+      "mae": 0.65
+    },
+    {
+      "code": "207940",
+      "name": "삼성바이오로직스",
+      "morning_action": "눌림 대기",
+      "first_price": 1497000.0,
+      "close_price": 1504000.0,
+      "close_return": 0.47,
+      "day_peak_return": 5.21,
+      "mae": 0.4
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "morning_action": "눌림 대기",
+      "first_price": 362000.0,
+      "close_price": 361500.0,
+      "close_return": -0.14,
+      "day_peak_return": 2.9,
+      "mae": -3.04
+    }
+  ]
+}
