@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-13",
+  "open_updated_at": "2026-11-13 01:08",
+  "close_updated_at": "2026-11-13 16:05",
+  "stocks": [
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "눌림 대기",
+      "first_price": 210500.0,
+      "close_price": 213500.0,
+      "close_return": 1.43,
+      "day_peak_return": 2.14,
+      "mae": -1.66
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "morning_action": "눌림 대기",
+      "first_price": 120800.0,
+      "close_price": 124000.0,
+      "close_return": 2.65,
+      "day_peak_return": 3.97,
+      "mae": -0.5
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "morning_action": "눌림 대기",
+      "first_price": 353500.0,
+      "close_price": 356000.0,
+      "close_return": 0.71,
+      "day_peak_return": 4.67,
+      "mae": 0.14
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "morning_action": "눌림 대기",
+      "first_price": 31850.0,
+      "close_price": 31850.0,
+      "close_return": 0.0,
+      "day_peak_return": 2.04,
+      "mae": -1.1
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "제외",
+      "first_price": 206500.0,
+      "close_price": 207500.0,
+      "close_return": 0.48,
+      "day_peak_return": 4.6,
+      "mae": -0.73
+    }
+  ]
+}
