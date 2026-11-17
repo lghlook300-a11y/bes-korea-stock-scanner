@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-17",
+  "open_updated_at": "2026-11-17 02:20",
+  "close_updated_at": "2026-11-17 17:20",
+  "stocks": [
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "눌림 대기",
+      "first_price": 161700.0,
+      "close_price": 156700.0,
+      "close_return": -3.09,
+      "day_peak_return": 0.0,
+      "mae": -3.34
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "morning_action": "눌림 대기",
+      "first_price": 126800.0,
+      "close_price": 124800.0,
+      "close_return": -1.58,
+      "day_peak_return": 0.16,
+      "mae": -2.29
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "눌림 대기",
+      "first_price": 214000.0,
+      "close_price": 212500.0,
+      "close_return": -0.7,
+      "day_peak_return": 1.17,
+      "mae": -1.4
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "morning_action": "눌림 대기",
+      "first_price": 32400.0,
+      "close_price": 31700.0,
+      "close_return": -2.16,
+      "day_peak_return": -0.15,
+      "mae": -2.93
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "morning_action": "제외",
+      "first_price": 171900.0,
+      "close_price": 169600.0,
+      "close_return": -1.34,
+      "day_peak_return": 0.58,
+      "mae": -1.57
+    }
+  ]
+}
