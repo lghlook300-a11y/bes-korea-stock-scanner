@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-20",
+  "open_updated_at": "2026-11-20 01:43",
+  "close_updated_at": "2026-11-20 16:39",
+  "stocks": [
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "눌림 대기",
+      "first_price": 214500.0,
+      "close_price": 212000.0,
+      "close_return": -1.17,
+      "day_peak_return": 0.93,
+      "mae": -1.63
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "morning_action": "눌림 대기",
+      "first_price": 124000.0,
+      "close_price": 123700.0,
+      "close_return": -0.24,
+      "day_peak_return": 2.26,
+      "mae": -1.45
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 12300.0,
+      "close_price": 12770.0,
+      "close_return": 3.82,
+      "day_peak_return": 4.88,
+      "mae": -3.17
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "morning_action": "관찰",
+      "first_price": 1190000.0,
+      "close_price": 1104000.0,
+      "close_return": -7.23,
+      "day_peak_return": -5.55,
+      "mae": -7.9
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "morning_action": "관찰",
+      "first_price": 154500.0,
+      "close_price": 152100.0,
+      "close_return": -1.55,
+      "day_peak_return": 0.78,
+      "mae": -2.33
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "morning_action": "제외",
+      "first_price": 197400.0,
+      "close_price": 182200.0,
+      "close_return": -7.7,
+      "day_peak_return": -4.1,
+      "mae": -8.11
+    }
+  ]
+}
