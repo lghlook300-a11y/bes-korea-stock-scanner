@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-24",
+  "open_updated_at": "2026-11-24 04:25",
+  "close_updated_at": "2026-11-24 19:19",
+  "stocks": [
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 12660.0,
+      "close_price": 12480.0,
+      "close_return": -1.42,
+      "day_peak_return": 0.63,
+      "mae": -3.24
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "morning_action": "제외",
+      "first_price": 401500.0,
+      "close_price": 433000.0,
+      "close_return": 7.85,
+      "day_peak_return": 14.07,
+      "mae": 1.49
+    },
+    {
+      "code": "000270",
+      "name": "기아",
+      "morning_action": "제외",
+      "first_price": 86600.0,
+      "close_price": 93300.0,
+      "close_return": 7.74,
+      "day_peak_return": 12.01,
+      "mae": 1.5
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "morning_action": "제외",
+      "first_price": 248500.0,
+      "close_price": 266500.0,
+      "close_return": 7.24,
+      "day_peak_return": 12.27,
+      "mae": 1.61
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "제외",
+      "first_price": 293000.0,
+      "close_price": 306500.0,
+      "close_return": 4.61,
+      "day_peak_return": 8.02,
+      "mae": 1.54
+    }
+  ]
+}
