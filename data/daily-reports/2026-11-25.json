@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-25",
+  "open_updated_at": "2026-11-25 04:01",
+  "close_updated_at": "2026-11-25 17:59",
+  "stocks": [
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "관찰",
+      "first_price": 207000.0,
+      "close_price": 215500.0,
+      "close_return": 4.11,
+      "day_peak_return": 4.83,
+      "mae": 1.93
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "morning_action": "관찰",
+      "first_price": 344500.0,
+      "close_price": 348000.0,
+      "close_return": 1.02,
+      "day_peak_return": 4.5,
+      "mae": 0.29
+    },
+    {
+      "code": "000270",
+      "name": "기아",
+      "morning_action": "관찰",
+      "first_price": 92600.0,
+      "close_price": 95100.0,
+      "close_return": 2.7,
+      "day_peak_return": 4.1,
+      "mae": 0.54
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "morning_action": "관찰",
+      "first_price": 264500.0,
+      "close_price": 267500.0,
+      "close_return": 1.13,
+      "day_peak_return": 3.78,
+      "mae": 0.19
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "관찰",
+      "first_price": 304500.0,
+      "close_price": 306000.0,
+      "close_return": 0.49,
+      "day_peak_return": 3.61,
+      "mae": -0.33
+    },
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "morning_action": "관찰",
+      "first_price": 612000.0,
+      "close_price": 629000.0,
+      "close_return": 2.78,
+      "day_peak_return": 6.37,
+      "mae": 0.49
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "관찰",
+      "first_price": 12480.0,
+      "close_price": 13280.0,
+      "close_return": 6.41,
+      "day_peak_return": 8.17,
+      "mae": -1.84
+    }
+  ]
+}
