@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-26",
+  "open_updated_at": "2026-11-26 03:07",
+  "close_updated_at": "2026-11-26 17:47",
+  "stocks": [
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "morning_action": "눌림 대기",
+      "first_price": 215000.0,
+      "close_price": 216000.0,
+      "close_return": 0.47,
+      "day_peak_return": 2.33,
+      "mae": -0.93
+    },
+    {
+      "code": "293490",
+      "name": "카카오게임즈",
+      "morning_action": "눌림 대기",
+      "first_price": 13230.0,
+      "close_price": 12970.0,
+      "close_return": -1.97,
+      "day_peak_return": 4.46,
+      "mae": -2.72
+    },
+    {
+      "code": "196170",
+      "name": "알테오젠",
+      "morning_action": "관찰",
+      "first_price": 166200.0,
+      "close_price": 171300.0,
+      "close_return": 3.07,
+      "day_peak_return": 7.04,
+      "mae": 0.36
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "morning_action": "제외",
+      "first_price": 156000.0,
+      "close_price": 160000.0,
+      "close_return": 2.56,
+      "day_peak_return": 3.97,
+      "mae": 1.28
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "morning_action": "제외",
+      "first_price": 304500.0,
+      "close_price": 303500.0,
+      "close_return": -0.33,
+      "day_peak_return": 4.76,
+      "mae": -1.15
+    }
+  ]
+}
